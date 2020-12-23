@@ -1,0 +1,42 @@
+
+#first_top_part {
+    height: 400px;
+    background-image: url("./photo/1/jj-ying-7JX0-bfiuxQ-unsplash.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -17px;
+    margin-top: -10px;
+}
+
+#nav_bar {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.nav_bar_item {
+    color: rgb(95, 24, 95);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 3.5%;
+    
+}
+#search_svg {
+    color: rgb(95, 24, 95);
+}
+
+#first_second_part{
+    height: 400px;
+    background-color: #adadad;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+p {
+    color: red;
+}
