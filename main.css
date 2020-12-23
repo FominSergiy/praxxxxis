@@ -1,4 +1,4 @@
-
+/* nav bar start */
 #first_top_part {
     height: 600px;
     background-image: url("./photo/1/jj-ying-7JX0-bfiuxQ-unsplash.jpg");
@@ -26,25 +26,81 @@
     margin-right: 3.5%;
     
 }
+/* nav bar end */
 
+/* event selector start */
 #event_selector {
     position: relative;
     text-align: center;
     margin-top: 50px;
 }
 
-.nav_arrows {
-    color: rgb(95, 24, 95);
-    position: relative;
-    font-size: -webkit-xxx-large;
+#center_element {
+    color: tomato;
+    font-size: 50px;
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
 }
 
-#center_element {
-    width: 25px;
-    height: 25px;
-    background-position: center;
-    position: relative;
+#center_element_txt {
+    position: absolute;
+    opacity: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
+
+.selector_elements{
+    top: 25%;
+}
+
+#left_element {
+    background-color: white;
+    text-align: left;
+    width: 150px;
+    height: 200px;
+    color: rgb(95, 24, 95);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#right_element {
+    background-color: white;
+    text-align: right;
+    width: 150px;
+    height: 200px;
+    color: rgb(95, 24, 95);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.selector_elements {
+    display: inline-block;
+}
+
+.nav_arrows {
+    color: rgb(95, 24, 95);
+    position: absolute;
+    font-size: 50px;
+    vertical-align: middle;
+    top: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    align-items: center;
+}
+
+#left_chevron {
+    left: 15%;
+}
+
+#right_chevron {
+    right: 15%;
+}
+/* event selector end */
 
 #first_second_part{
     height: 600px;
@@ -52,8 +108,4 @@
     background-position: center;
     background-size: cover;
     position: relative;
-}
-
-p {
-    color: red;
 }

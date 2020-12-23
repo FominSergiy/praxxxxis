@@ -13,9 +13,9 @@
     <div class="first">
         <div id="first_top_part">
 
-            <!-- nav bar START -->
+            <!-- nav bar START header tag -->
             <div id="nav_bar">
-                <a class="nav_bar_item" href="#what_is_on">what"s on</a>
+                <a class="nav_bar_item" href="#what_is_on">what's on</a>
                 <a class="nav_bar_item" href="#tickets">tickets</a>
                 <a class="nav_bar_item" href="#highlights">highlights</a>
                 <a class="nav_bar_item" href="#learn">learn</a>
@@ -28,21 +28,34 @@
 
             <!-- event selector START -->
             <div id="event_selector">
-                <a class="nav_arrows">
+                <div class="nav_arrows" id="left_chevron">
                     <i class="fas fa-chevron-left"></i>
-                </a>
-                <span class="selector_elements"></span>
-                <span class="selector_elements" id="center_element">
-                    <img src='./photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg' width=300 height=300>
-                </span>
-                <span class="selector_elements"></span>
-                <span class="nav_arrows">
+                </div>
+                <div class="selector_elements" id="left_element">
+                    <p>
+                        August 19, 2019
+                        -
+                        February 23, 2020
+                    </p>
+                </div>
+                <div class="selector_elements" id="center_element">
+                    <img src="./photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg" width=300 height=300>
+                    <div id="center_element_txt">Current exhibition</div>
+                </div>
+                <div class="selector_elements" id="right_element">
+                    <p>
+                        10am-6pm
+                        (Sun - Thu)
+                        10am-10pm
+                        (Fri - Sat)
+
+                    </p>
+                </div>
+                <div class="nav_arrows" id="right_chevron">
                     <i class="fas fa-chevron-right"></i>
-                </span>
+                </div>
             </div>
             <!-- event selector END -->
-
-
         </div>
         <div id="first_second_part">
             <p> some text 2 part 2</p>
