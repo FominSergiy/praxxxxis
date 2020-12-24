@@ -1,6 +1,6 @@
 /* class for arrow buttons across pages */
 .arrow_buttons {
-    background-color: rgb(95, 24, 95);
+    background-color: rgb(139, 72, 139);
     color:floralwhite;
     position: absolute;
     padding: 0.3em;
@@ -14,11 +14,15 @@
     width: 100px;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     width: 50px;
     right: 5%;
     font-size: large;
+}
+
+.first {
+    position: relative;
 }
 
 /* nav bar start */
@@ -41,7 +45,7 @@
 }
 
 .nav_bar_item {
-    color: rgb(95, 24, 95);
+    color: rgb(139, 72, 139);
     font-family:Arial, Helvetica, sans-serif;
     font-size: large;
     font-weight: bold;
@@ -59,7 +63,7 @@
     height: 400px;
 }
 
-.selector_elements{
+.selector_elements {
     background-color: white;
     display: inline-block;
     position: absolute;
@@ -69,7 +73,7 @@
 }
 
 .nav_arrows {
-    color: rgb(95, 24, 95);
+    color: rgb(139, 72, 139);
     position: absolute;
     font-size: 50px;
     vertical-align: middle;
@@ -84,7 +88,7 @@
 #left_element {
     left: 19.5%;
     text-align: left;
-    color: rgb(95, 24, 95);
+    color: rgb(139, 72, 139);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 50px;
@@ -112,7 +116,7 @@
 #right_element {
     right: 19.5%;
     text-align: right;
-    color: rgb(95, 24, 95);
+    color: rgb(139, 72, 139);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 50px;
@@ -132,10 +136,55 @@
 }
 /* event selector end */
 
-#first_second_part{
+/* grey area start */
+
+#first_second_part {
     height: 600px;
     background-color: #adadad;
     background-position: center;
     background-size: cover;
     position: relative;
+}
+
+.text_first_second_part {
+    position: absolute;
+    padding-left: 3%;
+}
+
+#first_second_header {
+    color:white;
+    font-size: 57px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-stretch: expanded;
+    
+}
+
+/* image */
+#big_image {
+    position: absolute;
+    height: 850px;
+    width: 1000px;
+    right: 0%;
+    bottom: 0%;
+}
+
+#circle {
+    position: absolute;
+    height: 450px;
+    width: 535px;
+    right: 0%;
+    bottom: 20%;
+    color: rgb(139, 72, 139);
+    opacity: 85%;
+    font-size: 535px;
+}
+
+#waves {
+    position: absolute;
+    right: 35%;
+    bottom: 15%;
+    color: white;
+    opacity: 85%;
+    font-size: 150px;
 }
