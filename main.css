@@ -1,3 +1,26 @@
+/* class for arrow buttons across pages */
+.arrow_buttons {
+    background-color: rgb(95, 24, 95);
+    color:floralwhite;
+    position: absolute;
+    padding: 0.3em;
+    display: inline-block;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.text {
+    position: absolute;
+    width: 100px;
+}
+
+.arrow{
+    position: absolute;
+    width: 50px;
+    right: 5%;
+    font-size: large;
+}
+
 /* nav bar start */
 #first_top_part {
     height: 600px;
@@ -33,53 +56,16 @@
     position: relative;
     text-align: center;
     margin-top: 50px;
-}
-
-#center_element {
-    color: tomato;
-    font-size: 50px;
-    font-weight: bold;
-    width: 300px;
-    height: 300px;
-}
-
-#center_element_txt {
-    position: absolute;
-    opacity: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    height: 400px;
 }
 
 .selector_elements{
-    top: 25%;
-}
-
-#left_element {
     background-color: white;
-    text-align: left;
-    width: 150px;
-    height: 200px;
-    color: rgb(95, 24, 95);
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: large;
-    font-weight: bold;
-}
-
-#right_element {
-    background-color: white;
-    text-align: right;
-    width: 150px;
-    height: 200px;
-    color: rgb(95, 24, 95);
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: large;
-    font-weight: bold;
-}
-
-.selector_elements {
     display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 270px;
+    font-weight: bold;
 }
 
 .nav_arrows {
@@ -87,18 +73,62 @@
     position: absolute;
     font-size: 50px;
     vertical-align: middle;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%);
-    justify-content: center;
-    align-items: center;
 }
 
 #left_chevron {
-    left: 15%;
+    left: 16%;
+}
+
+#left_element {
+    left: 19.5%;
+    text-align: left;
+    color: rgb(95, 24, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-left: 1em;
+}
+
+#center_element {
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    transform: translate(-50%);
+}
+
+#center_element_txt {
+    position: absolute;
+    color: tomato;
+    font-size: 50px;
+    opacity: 60%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+
+}
+
+#right_element {
+    right: 19.5%;
+    text-align: right;
+    color: rgb(95, 24, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-right: 1em;
 }
 
 #right_chevron {
-    right: 15%;
+    right: 13%;
+}
+
+#view_more {
+    width: 150px;
+    height: 20px;
+    bottom: 5%;
+    left: 8%;
+    transform: translate(25%);
 }
 /* event selector end */
 
