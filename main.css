@@ -26,7 +26,7 @@
 }
 
 /* nav bar start */
-#first_top_part {
+#first_top {
     height: 600px;
     background-image: url("./photo/1/jj-ying-7JX0-bfiuxQ-unsplash.jpg");
     background-color: #cccccc;
@@ -138,7 +138,7 @@
 
 /* grey area start */
 
-#first_second_part {
+#first_bottom {
     height: 600px;
     background-color: #adadad;
     background-position: center;
@@ -146,12 +146,12 @@
     position: relative;
 }
 
-.text_first_second_part {
+.first_bottom_txt {
     position: absolute;
     padding-left: 3%;
 }
 
-#first_second_header {
+#first_bottom_header {
     color:white;
     font-size: 57px;
     font-family: Arial, Helvetica, sans-serif;
