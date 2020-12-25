@@ -222,3 +222,81 @@
     opacity: 85%;
     font-size: 150px;
 }
+
+/* first page finished */
+
+/* second page start */
+#second {
+    padding: 2%;
+    margin: 2%;
+    border: solid;
+    border-color: rgb(139, 72, 139);
+    height: 600px;
+    background-color: white;
+    background-position: center;
+}
+
+.second_vertical {
+    position: absolute;
+    text-orientation: sideways;
+    top: 30%;
+    transform: translate(-50%);
+    background-color: white;
+    color: rgb(139, 72, 139);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* side text styling */
+#second_left_vertical {
+    writing-mode: vertical-rl;
+    transform: translate(-50%) rotate(-180deg);
+    top: 27%;
+    left: 0%;
+}
+
+#second_right_vertical {
+    writing-mode: vertical-lr;
+    left: 100%;   
+}
+/* side text styling END */
+
+/* button styling */
+#see_more_white_space {
+    width: 160px;
+    height: 20px;
+    left: 50%;
+    bottom: -1.5%;
+    transform: translate(-50%);
+    background-color: white;
+}
+
+#see_more {
+    width: 150px;
+    height: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* button styling */
+
+/* nav arrows - main styling is taken from class nav_arrows */
+#second_left_chevron {
+    left: 5%;
+}
+
+#second_right_chevron {
+    right: 2%;
+}
+/* nav arrows END */
+
+/* image table */
+.second_images_table {
+    height: 500px;
+    width: 84%;
+    background-color: aqua;
+    left: 8%;
+    top: 10%;
+    position: absolute;
+}
