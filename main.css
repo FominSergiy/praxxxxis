@@ -1,4 +1,6 @@
 /* class for arrow buttons across pages */
+
+
 .arrow_buttons {
     background-color: rgb(139, 72, 139);
     color:floralwhite;
@@ -26,7 +28,7 @@
 }
 
 /* nav bar start */
-#first_top {
+.header {
     height: 600px;
     background-image: url("./photo/1/jj-ying-7JX0-bfiuxQ-unsplash.jpg");
     background-color: #cccccc;
@@ -96,6 +98,7 @@
 }
 
 #center_element {
+    position: absolute;
     left: 50%;
     width: 300px;
     height: 400px;
@@ -108,8 +111,8 @@
     font-size: 50px;
     opacity: 60%;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -207,7 +210,7 @@
     position: absolute;
     height: 450px;
     width: 535px;
-    right: 0%;
+    right: -5%;
     bottom: 20%;
     color: rgb(139, 72, 139);
     opacity: 85%;
