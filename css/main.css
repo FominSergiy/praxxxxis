@@ -1,4 +1,9 @@
-
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -38,7 +43,7 @@ a {
 .nav {
     color: #85689a;
     font-size: 4.5vh;
-    padding-top: 17vh;
+    padding-top: 14vh;
     margin-bottom: 5.7vh;
     white-space: nowrap;
 }
@@ -90,10 +95,11 @@ a {
     display: flex;
     justify-content: space-between;
     font-size: 4.3vh;
-    line-height: 7vh;
     color: #85689a;
     padding: 5.7vh 2.1vw;
-    margin: 9.8vh 5.5vw;
+    margin-left: 5.5vw;
+    margin-right: 5.5vw;
+
     position: relative;
     top: 50%;
     transform: translateY(-50%)
@@ -109,7 +115,7 @@ a {
     color: #85689a;
 }
 
-.slider::after {
+.selector::after {
     font-family: 'icomoon';
     content: "\f054";
     right: 0;
@@ -142,7 +148,7 @@ a {
 .more-btn {
     position: relative;
     left: 39%;
-    top: 3.5vh;
+    top: -3.5vh;
 }
 
 .main-btn::after {
@@ -177,12 +183,12 @@ a {
 
 .upcoming-exhibition h3 {
     font-size: 8.8vh;
-    padding-top: 9.6vh;
+    padding-top: 8.5vh;
 }
 
-.upcoming-exhibitio__date {
+.upcoming-exhibition__date {
     font-size: 5.9vh;
-    line-height: 12.6vh;
+    line-height: 11vh;
     padding: 4.7vh 0 5vh;
 }
 
@@ -197,54 +203,55 @@ a {
 
 .buy-btn {
     position: relative;
+    bottom: 2vh;
 }
 
 /* image */
-.img-container__statue {
+.img-container__statue img {
+    right: 0;
+    bottom: -100%;
     position: absolute;
-    height: 850px;
-    width: 1000px;
-    right: 0%;
-    bottom: 0%;
+    height: 120vh;
+    z-index: 3;
 }
 
 .circle {
+    content: "";
     position: absolute;
-    height: 450px;
-    width: 535px;
-    right: -5%;
-    bottom: 20%;
-    color: rgb(139, 72, 139);
-    opacity: 85%;
-    font-size: 535px;
+    width: 90vh;
+    height: 90vh;
+    border-radius: 50%;
+    background-color: #85689a;
+    right: -10vh;
+    top: 5vh;
+    z-index: -1;
 }
 
 .waves {
     position: absolute;
     right: 35%;
-    bottom: 15%;
+    bottom: 20%;
     color: white;
     opacity: 85%;
-    font-size: 150px;
+    font-size: 130px;
 }
 
 /* first page finished */
 
-#!
 
-/* second page start */
-#second {
-    padding: 2%;
-    margin: 2%;
-    border: solid;
-    border-color: rgb(139, 72, 139);
-    height: 600px;
-    background-color: white;
-    background-position: center;
+/* highlights */
+.highlights {
+    height: 100vh;
+    padding: 5vh 3.8vw;
+}
+
+.highlights_container {
+    border: 0.76vh solid #85689a;
+    height: 90vh;
+    background-color: aqua;
 }
 
 .second_vertical {
-    position: absolute;
     text-orientation: sideways;
     top: 30%;
     transform: translate(-50%);
@@ -299,11 +306,3 @@ a {
 /* nav arrows END */
 
 /* image table */
-.second_images_table {
-    height: 500px;
-    width: 84%;
-    background-color: aqua;
-    left: 8%;
-    top: 10%;
-    position: absolute;
-}

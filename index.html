@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/3b6a2896a8.js" crossorigin="anonymous"></script>
     <!-- only meta goes in head -->
     <!--  title stuff-->
@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <div id="container">
+        <div class="container">
             <!-- nav bar START header tag -->
             <nav class="nav">
                 <ul class='nav__list'>
@@ -74,12 +74,10 @@
 
                 <!-- center element with imange and button -->
                 <div class="img-container">
-                    <img class="img-container__exhibition" src="./photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg"
-                        width=520 height=690>
+                    <img class="img-container__exhibition" src="./photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg">
                     <a class="main-btn more-btn" href="">View more</a>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -98,63 +96,51 @@
 
         <!-- circle image-->
         <div class="circle">
-            <i class="fas fa-circle"></i>
-        </div>
-
-        <div class="img-container__statue">
-            <img src="./photo/1/IMG_20201223_110736_503.PNG" alt="">
         </div>
 
         <!-- image containers -->
         <div class="waves">
             <i class="fas fa-water"></i>
         </div>
-
     </section>
+
+    <!-- statue image to show with no cropping due to overflow:hidden on section above-->
+    <div class="img-container__statue">
+        <img src="./photo/1/IMG_20201223_110736_503.PNG" alt="">
+    </div>
+
 
     <section class="highlights">
-        <!-- left and right side vertical text -->
-        <div class="second_vertical" id="second_left_vertical">
-            Highlights of 2019
-        </div>
-        <div class="second_vertical" id="second_right_vertical">
-            Highlights of 2019
-        </div>
+        <div class="highlights_container">
+            <!-- left and right side vertical text -->
+            <div class="second_vertical" id="second_left_vertical">
+                Highlights of 2019
+            </div>
+            <div class="second_vertical" id="second_right_vertical">
+                Highlights of 2019
+            </div>
 
-        <!-- left nav arror-->
-        <div class="nav_arrows" id="second_left_chevron">
-            <i class="fas fa-chevron-left"></i>
-        </div>
+            <!-- left nav arror-->
+            <div class="nav_arrows" id="second_left_chevron">
+                <i class="fas fa-chevron-left"></i>
+            </div>
 
-        <!-- images table -->
-        <div class="second_images_table">
-            Hi theree
-        </div>
+            <!-- images table -->
+            <div class="second_images_table">
+                Hi theree
+            </div>
 
-        <!-- right nav arrow-->
-        <div class="nav_arrows" id="second_right_chevron">
-            <i class="fas fa-chevron-right"></i>
-        </div>
+            <!-- right nav arrow-->
+            <div class="nav_arrows" id="second_right_chevron">
+                <i class="fas fa-chevron-right"></i>
+            </div>
 
-        <!-- white container -->
-        <div class="arrow_buttons" id="see_more_white_space">
-            <a class="main-btn see_more-btn" href="">See more</a>
+            <!-- white container -->
+            <div class="arrow_buttons" id="see_more_white_space">
+                <a class="main-btn see_more-btn" href="">See more</a>
+            </div>
         </div>
-
     </section>
-
-
-
-
-
-    </div>
-    <div class="third">
-        <p> some text 3</p>
-
-    </div>
-    <div class="forth">
-
-    </div>
 </body>
 
 </html>
