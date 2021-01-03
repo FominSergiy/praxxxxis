@@ -264,7 +264,6 @@ a {
     padding-top: 2%;
     padding-bottom: 2%;
     position: absolute;
-    display: inline-block;
     height: 45vh;
     padding: 2vh;
     left: -2.5%;
@@ -285,10 +284,9 @@ a {
     padding-top: 2%;
     padding-bottom: 2%;
     position: absolute;
-    display: inline-block;
     height: 45vh;
     padding: 2vh;
-    right: -2.5%;
+    right: -0.7%;
     top: 25%;
     z-index: 1;
 }
@@ -374,4 +372,78 @@ a {
     width: 10vw;
     height: 2hv;
 }
-/* button styling */
+
+/* exhibition list START */
+.exhibition-list {
+    height: 100vh;
+    background-image: url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale() blur(); /* make blur work again! */
+}
+
+.exhibition-list__container {
+    padding: 10vw 15vh 8vw 15vh;
+    position: relative;
+}
+
+.exhitibion-list__container-info {
+    font-family: 'icomoon';
+    font-size: 6vh;
+    font-weight: bolder;
+    line-height: 9vh;
+    padding-bottom: 5vh;
+    text-align: left;
+    
+}
+
+.exhibition-list__box {
+    position: absolute;
+    height: 68vh;
+    width: 40vw;
+    display: grid;
+    row-gap: 3vh;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    top: 14.5%;
+    right: 10%;
+}
+
+.exhibition-list__box-card {
+    position: relative;
+    display: flex;
+    max-width: 25vw;
+    width: 15.5vw;
+    height: 31vh;
+}
+
+.exhibition-list__box-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.exhibition-list__box-card::after {
+    font-family: 'icomoon';
+    content: "\f178";
+    font-size: 4vh;
+    color: #fff;
+    transition: all 0.3s;
+    height: 4vh;
+    width: 4vh;
+    right: 3%;
+    top: 45%;
+    position: absolute;  
+    transform: translate(50%);
+}
+
+.learn_more-btn {
+    position: absolute;
+    width: 17vw;
+    left: 50%;
+    top: 96%;
+    transform: translate(-50%);
+}
