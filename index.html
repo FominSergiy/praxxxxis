@@ -161,6 +161,7 @@
 
     <!-- exhibition list section START -->
     <section class="exhibition-list">
+        <div class="background-image"></div>
         <div class="exhibition-list__container">
             <p class="exhitibion-list__container-info">
                 Adult Art-Making Workshops
@@ -177,6 +178,18 @@
 
             <!-- image table START -->
             <div class="exhibition-list__box">
+
+                <!-- Set custom color filter to get purple pictures -->
+                <svg class="defs-only">
+                    <filter id="monochrome" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+                        <feColorMatrix type="matrix" values="
+                        0.1 0 0.9 0 0
+                        0 1 0 0 0 1.2
+                        0.6 0.3 0 0 0
+                        0 0.2 1 -0.1" />
+                    </filter>
+                </svg>
+
                 <div class="exhibition-list__box-card">
                     <div class="exhibition-list__box-image">
                         <img src="photo/4/eddy-klaus-BHNxfaeNCTI-unsplash.jpg" alt="">

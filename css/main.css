@@ -376,26 +376,22 @@ a {
 /* exhibition list START */
 .exhibition-list {
     height: 100vh;
-    background-image:
-        linear-gradient(black, black),
-         url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-blend-mode: saturation;
 }
 
-.exhibition-list::before {
-    content: ""; /* Important */
-    z-index: -1; /* Important */
-    position: inherit;
-    left: inherit;
-    top: inherit;
-    width: inherit;
-    height: inherit;
-    background-image: inherit;
+.background-image {
+    background-image:
+        linear-gradient(grey, grey),
+         url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
     background-size: cover;
-    filter: blur(8px);
+    display: block;
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right:0;
+    z-index: -1;
+    background-blend-mode: saturation;
 }
 
 .exhibition-list__container {
@@ -426,6 +422,13 @@ a {
     right: 10%;
 }
 
+.defs-only {
+    position: absolute;
+    height: 0; width: 0;
+    overflow: none;
+    left: -100%;
+}  
+
 .exhibition-list__box-card {
     position: relative;
     display: flex;
@@ -439,6 +442,7 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    filter: url(#monochrome);
 }
 
 .exhibition-list__box-card::after {
