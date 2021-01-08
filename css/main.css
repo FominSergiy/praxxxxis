@@ -376,11 +376,26 @@ a {
 /* exhibition list START */
 .exhibition-list {
     height: 100vh;
-    background-image: url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
+    background-image:
+        linear-gradient(black, black),
+         url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    filter: grayscale() blur(); /* make blur work again! */
+    background-blend-mode: saturation;
+}
+
+.exhibition-list::before {
+    content: ""; /* Important */
+    z-index: -1; /* Important */
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(8px);
 }
 
 .exhibition-list__container {
@@ -442,7 +457,6 @@ a {
 
 .learn_more-btn {
     position: absolute;
-    width: 17vw;
     left: 50%;
     top: 96%;
     transform: translate(-50%);
