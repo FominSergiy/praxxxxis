@@ -110,26 +110,25 @@ a {
     transform: translateY(-50%)
 }
 
-.selector::before {
+.selector::before,
+.selector::after {
     font-family: 'icomoon';
-    content: "\f053";
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     position: absolute;
+    transform: translateY(-50%);
     font-size: 7vh;
     color: #85689a;
 }
 
+.selector::before {
+    content: "\f053";
+    left: 0;
+    top: 50%;
+}
+
 .selector::after {
-    font-family: 'icomoon';
     content: "\f054";
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    font-size: 7vh;
-    color: #85689a;
 }
 
 .date__right,
@@ -254,40 +253,31 @@ a {
     padding: 5vh 3.8vw;
 }
 
-.highlights_container::before {
-    content: 'Highlights of 2019';
-    writing-mode: vertical-lr;
-    text-orientation: sideways;
-    text-align: center;
-    display: inline-block;
-    background-color: white;
-    color: rgb(139, 72, 139);
-    font-size: 50px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    position: absolute;
-    height: 45vh;
-    padding: 2vh;
-    left: -2.5%;
-    top: 25%;
-    z-index: 1;
-}
-
+.highlights_container::before,
 .highlights_container::after {
     content: 'Highlights of 2019';
     writing-mode: vertical-lr;
     text-orientation: sideways;
     text-align: center;
     display: inline-block;
-    transform: rotate(-180deg);
     background-color: white;
     color: rgb(139, 72, 139);
     font-size: 50px;
     padding-top: 2%;
     padding-bottom: 2%;
     position: absolute;
-    height: 45vh;
+    height: 48vh;
     padding: 2vh;
+}
+
+.highlights_container::before {
+    left: -2.5%;
+    top: 25%;
+    z-index: 1;
+}
+
+.highlights_container::after {
+    transform: rotate(-180deg);
     right: -0.7%;
     top: 25%;
     z-index: 1;
