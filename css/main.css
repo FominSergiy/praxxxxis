@@ -262,7 +262,7 @@ a {
     display: inline-block;
     background-color: white;
     color: rgb(139, 72, 139);
-    font-size: 50px;
+    font-size: 5vh;
     padding-top: 2%;
     padding-bottom: 2%;
     position: absolute;
@@ -389,18 +389,16 @@ a {
 }
 
 .exhibition-list__container {
-    padding: 10vw 15vh 8vw 15vh;
+    padding: 10vw 20vh 5vw 26vh;
     position: relative;
 }
 
 .exhitibion-list__container-info {
-    font-family: 'icomoon';
-    font-size: 6vh;
+    font-size: 4vh;
     font-weight: bolder;
-    line-height: 9vh;
+    line-height: 11vh;
     padding-bottom: 5vh;
     text-align: left;
-    
 }
 
 .exhibition-list__box {
@@ -413,7 +411,7 @@ a {
     justify-items: center;
     align-items: center;
     top: 14.5%;
-    right: 10%;
+    right: 11%;
 }
 
 .defs-only {
@@ -431,8 +429,10 @@ a {
     height: 31vh;
 }
 
-.exhibition-list__box-image img {
+.exhibition-list__box-image {
     display: block;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -456,6 +456,6 @@ a {
 .learn_more-btn {
     position: absolute;
     left: 50%;
-    top: 96%;
+    top: 95%;
     transform: translate(-50%);
 }
