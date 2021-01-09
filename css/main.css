@@ -330,8 +330,10 @@ a {
     height: 37vh;
 }
 
-.highlights__box-image img {
+.highlights__box-image {
     display: block;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
