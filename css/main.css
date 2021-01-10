@@ -294,7 +294,7 @@ a {
     width: 90vw;
     padding: 3vh 6vw 3vh 7vw;
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 }
