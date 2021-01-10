@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <title>Exibition</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel='stylesheet' href="./css/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3b6a2896a8.js" crossorigin="anonymous"></script>
     <!-- only meta goes in head -->
     <!--  title stuff-->
@@ -11,152 +14,149 @@
 
 <body>
     <header class="header">
-        <!-- nav bar START header tag -->
-        <div id="nav_bar">
-            <nav class="menu">
-                <ul class='nav_list'>
-                    <a class="nav_bar_item" href="#what_is_on">what's on</a>
-                    <a class="nav_bar_item" href="#tickets">tickets</a>
-                    <a class="nav_bar_item" href="#highlights">highlights</a>
-                    <a class="nav_bar_item" href="#learn">learn</a>
-                    <a class="nav_bar_item" href="#sign_up">sign up</a>
-                    <a class="nav_bar_item">
-                        <i class="fas fa-search"></i>
-                    </a>
+        <div class="container">
+            <!-- nav bar START header tag -->
+            <nav class="nav">
+                <ul class='nav__list'>
+                    <li class="nav__list-item">
+                        <a class="nav__ref" href="">
+                            what's on
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__ref" href="">
+                            tickets
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__ref" href="">
+                            highlights
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__ref" href="">
+                            learn
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__ref" href="">
+                            sign up
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__ref search-btn">
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </div>
-        <!-- nav bar END -->
+            <!-- nav bar END -->
 
-        <!-- event selector START -->
-        <div id="event_selector">
+            <div class="selector">
+                <h2 class="selector__title">Current exhibition</h2>
 
-            <!-- left nav arrow-->
-            <div class="nav_arrows" id="left_chevron">
-                <i class="fas fa-chevron-left"></i>
-            </div>
+                <!-- three center elements -->
+                <div class='date'>
+                    <div class="date__left">
+                        <p>August</p>
+                        <p>10, 2019</p>
+                        <p> –</p>
+                        <p> February </p>
+                        <p>23, 2020</p>
+                    </div>
+                    <div class="date__right">
+                        <p> 10am-6pm </p>
+                        <p>(Sun – Thu)</p>
+                        <p>–</p>
+                        <p>10am-10pm </p>
+                        <p> (Fri – Sat)</p>
+                    </div>
+                </div>
 
-            <!-- three center elements -->
-            <div class="selector_elements" id="left_element">
-                <br>August<br>
-                <br> 19, 2019<br>
-                <br>-<br>
-                <br>February<br>
-                <br>23, 2020<br>
-            </div>
-
-            <!-- center element with imange and button -->
-            <div class="selector_elements" id="center_element">
-                <img src="./photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg" width=300 height=400>
-                <div id="center_element_txt">Current exhibition</div>
-                <!-- arrow button -->
-                <div class="arrow_buttons" id="view_more">
-                    <div class="text">View more</div>
-                    <div class="arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
+                <!-- center element with imange and button -->
+                <div class="img-container">
+                    <img class="img-container__exhibition" src="./photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg">
+                    <a class="main-btn more-btn" href="">View more</a>
                 </div>
             </div>
-
-            <div class="selector_elements" id="right_element">
-                <br>10am-6pm<br>
-                <br>(Sun - Thu)<br>
-                <br>-<br>
-                <br>10am-10pm<br>
-                <br>(Fri - Sat)<br>
-            </div>
-
-            <!-- right nav arrow-->
-            <div class="nav_arrows" id="right_chevron">
-                <i class="fas fa-chevron-right"></i>
-            </div>
+        </div>
     </header>
-    <!-- event selector END -->
-    <div id="first_bottom">
+
+    <!-- upcoming exhibition section START -->
+    <section class="upcoming-exhibition">
+
+        <h2 class="upcoming-exhibition__title">Felix Cooper: At the Edge</h2>
+        <h3>Upcoming exhibition</h3>
+
+        <p class="upcoming-exhibition__date">14 Feb – 31 May 2020</p>
+        <p class="upcoming-exhibition__info">Gallery 40</p>
+        <p class="upcoming-exhibition__info">£12.00</p>
+        <p class="upcoming-exhibition__info">Concessions apply</p>
+        <p class="upcoming-exhibition__info last-p">Advance booking is recommended</p>
+
+        <a class="main-btn buy-btn" href="">Buy now</a>
 
         <!-- circle image-->
-        <div id="circle">
-            <i class="fas fa-circle"></i>
+        <div class="circle">
         </div>
 
         <!-- image containers -->
-        <div id="waves">
+        <div class="waves">
             <i class="fas fa-water"></i>
         </div>
-        <div id="big_image">
-            <img src="./photo/1/IMG_20201223_110736_503.PNG" width=1000 height=850>
-        </div>
+    </section>
 
-        <!-- text container -->
-        <div class="first_bottom_txt">
-            <p id="first_bottom_header">
-                Felix Cooper: At the Edge
-            </p>
-            <p id="first_bottom_second_header">
-                Upcoming exhibition
-            </p>
-            <p id="first_bottom_dates">
-                14 Feb - 31 May 2020
-            </p>
-            <p id="first_bottom_ticket_info">
-                Gallery 40 <br>
-                $12.00 <br>
-                Concessions apply <br>
-                Advanced booking is recommended <br>
-            </p>
-        </div>
-
-        <!-- button container-->
-        <div class="arrow_buttons" id="buy_now">
-            <div class="text">Buy now</div>
-            <div class="arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
-        </div>
-
+    <!-- statue image to show with no cropping due to overflow:hidden on section above-->
+    <div class="img-container__statue">
+        <img src="./photo/1/IMG_20201223_110736_503.PNG" alt="">
     </div>
-    </div>
+    <!-- upcoming exhibition section END-->
 
-    <div class="main_containers" id="second">
+    <!-- highlights section START -->
+    <section class="highlights">
+        <div class="highlights_container">
 
-        <!-- left and right side vertical text -->
-        <div class="second_vertical" id="second_left_vertical">
-            Highlights of 2019
-        </div>
-        <div class="second_vertical" id="second_right_vertical">
-            Highlights of 2019
-        </div>
-
-        <!-- left nav arror-->
-        <div class="nav_arrows" id="second_left_chevron">
-            <i class="fas fa-chevron-left"></i>
-        </div>
-
-        <!-- images table -->
-        <div class="second_images_table">
-            Hi theree
-        </div>
-
-        <!-- right nav arrow-->
-        <div class="nav_arrows" id="second_right_chevron">
-            <i class="fas fa-chevron-right"></i>
-        </div>
-
-        <!-- white container -->
-        <div class="arrow_buttons" id="see_more_white_space">
-            <!-- button container -->
-            <div class="arrow_buttons" id="see_more">
-                <div class="text">See more</div>
-                <div class="arrow"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <!-- images table -->
+            <div class="highlights__box">
+                <div class="highlights__box-card">
+                    <div class="highlights__box-image">
+                        <img src="photo/3/stephany-lorena-EEae2nmrIJ8-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="highlights__box-card">
+                    <div class="highlights__box-image">
+                        <img src="photo/3/laurianne-huggins-AeT8VR7qss0-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="highlights__box-card">
+                    <div class="highlights__box-image">
+                        <img src="photo/3/gabriel-santiago-09IS_HJcUZA-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="highlights__box-card">
+                    <div class="highlights__box-image">
+                        <img src="photo/3/jon-tyson-WB9TRkyrlzk-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="highlights__box-card">
+                    <div class="highlights__box-image">
+                        <img src="photo/3/nina-z-Rc_gCVM9Wyw-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="highlights__box-card">
+                    <div class="highlights__box-image">
+                        <img src="photo/3/nikola-johnny-mirkovic-I-DOPxjgRxY-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- white container -->
+            <div class="white-contaier">
+                <a class="main-btn see_more-btn" href="">See more</a>
             </div>
         </div>
+    </section>
+    <!-- highlights section END -->
 
-
-
-    </div>
-    <div class="third">
-        <p> some text 3</p>
-
-    </div>
-    <div class="forth">
-
-    </div>
 </body>
 
 </html>
