@@ -43,7 +43,7 @@ a {
 .nav {
     color: #85689a;
     font-size: 4.5vh;
-    padding-top: 17vh;
+    padding-top: 10vh;
     margin-bottom: 5.7vh;
     white-space: nowrap;
 }
@@ -222,7 +222,7 @@ a {
     right: 0;
     bottom: 0%;
     position: absolute;
-    height: 120vh;
+    height: 130vh;
     z-index: 3;
     pointer-events: none;
 }
@@ -470,12 +470,12 @@ a {
     transform: translate(-50%);
 }
 
-/* general info START */
-.general-info {
+/* contact-us START */
+.contact-us {
     height: 100vh;
 }
 
-.general-info__background-image {
+.contact-us__background-image {
     background-image:
          url("../photo/5/back-3.png");
     background-size: cover;
