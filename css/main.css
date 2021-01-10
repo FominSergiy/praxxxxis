@@ -374,18 +374,19 @@ a {
 
 .agenda__background-image {
     background-image:
-        linear-gradient(grey, grey),
          url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
     background-size: cover;
     display: block;
-    filter: blur(5px);
+    filter: 
+        grayscale(100%)
+        contrast(70%)
+        blur(3px);
     height: 100%;
     width: 100%;
     left: 0;
     position: absolute;
     right:0;
     z-index: -1;
-    background-blend-mode: saturation;
 }
 
 .agenda__container {
@@ -405,14 +406,14 @@ a {
 
 .agenda__box {
     position: absolute;
-    height: 68vh;
-    width: 40vw;
+    height: 63vh;
+    width: 36vw;
     display: grid;
-    row-gap: 3vh;
+    padding: 1px 2vw 1px 2vw;
     grid-template-columns: repeat(2, 50%);
     justify-items: center;
     align-items: center;
-    top: 14.5%;
+    top: 19%;
     right: 11%;
 }
 
@@ -427,8 +428,8 @@ a {
     position: relative;
     display: flex;
     max-width: 25vw;
-    width: 15.5vw;
-    height: 31vh;
+    width: 13vw;
+    height: 26vh;
 }
 
 .agenda__box-image {
@@ -438,12 +439,15 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    filter: url(#monochrome);
+    filter: 
+        contrast(100%)
+        saturate(10%)
+        url(#monochrome);
 }
 
 .agenda__box-card::after {
     font-family: 'icomoon';
-    content: "\f178";
+    content: "\f142";
     font-size: 4vh;
     color: #fff;
     transition: all 0.3s;
