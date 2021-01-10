@@ -368,11 +368,11 @@ a {
 }
 
 /* exhibition list START */
-.exhibition-list {
+.agenda {
     height: 100vh;
 }
 
-.background-image {
+.agenda__background-image {
     background-image:
         linear-gradient(grey, grey),
          url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
@@ -388,20 +388,22 @@ a {
     background-blend-mode: saturation;
 }
 
-.exhibition-list__container {
+.agenda__container {
     padding: 10vw 20vh 5vw 26vh;
     position: relative;
 }
 
-.exhitibion-list__container-info {
+.agenda__list-item {
     font-size: 4vh;
     font-weight: bolder;
     line-height: 11vh;
     padding-bottom: 5vh;
     text-align: left;
+    justify-content: space-between;
+    list-style-type: none;
 }
 
-.exhibition-list__box {
+.agenda__box {
     position: absolute;
     height: 68vh;
     width: 40vw;
@@ -421,7 +423,7 @@ a {
     left: -100%;
 }  
 
-.exhibition-list__box-card {
+.agenda__box-card {
     position: relative;
     display: flex;
     max-width: 25vw;
@@ -429,7 +431,7 @@ a {
     height: 31vh;
 }
 
-.exhibition-list__box-image {
+.agenda__box-image {
     display: block;
     background-size: cover;
     background-position: center;
@@ -439,7 +441,7 @@ a {
     filter: url(#monochrome);
 }
 
-.exhibition-list__box-card::after {
+.agenda__box-card::after {
     font-family: 'icomoon';
     content: "\f178";
     font-size: 4vh;
@@ -458,4 +460,24 @@ a {
     left: 50%;
     top: 95%;
     transform: translate(-50%);
+}
+
+/* general info START */
+.general-info {
+    height: 100vh;
+}
+
+.general-info__background-image {
+    background-image:
+         url("../photo/5/back-3.png");
+    background-size: cover;
+    display: block;
+    filter: opacity(50);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right:0;
+    z-index: -1;
+    background-blend-mode: saturation;
 }
