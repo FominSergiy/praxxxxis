@@ -384,7 +384,7 @@ a {
     filter: 
         grayscale(100%)
         contrast(70%)
-        blur(3px);
+        blur(5px);
     height: 100%;
     width: 100%;
     left: 0;
@@ -473,6 +473,7 @@ a {
 /* contact-us START */
 .contact-us {
     height: 100vh;
+    position: relative;
 }
 
 .contact-us__background-image {
@@ -488,4 +489,98 @@ a {
     right:0;
     z-index: -1;
     background-blend-mode: saturation;
+}
+
+
+.contact-us__eye {
+    position: absolute;
+    height: 25vh;
+    width: 13vw;
+    background: url("../eye/eye1.png");
+    background-size: cover;
+    background-position: center;
+    top: 0.5%;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 1;
+}
+
+.contact-us__eye:hover {
+    background: url("../eye/eye2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-us__container {
+    max-width: 73vw;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav-bottom {
+    padding-top: 49vh;
+    position: relative;
+}
+
+.social-media {
+    padding: 26vh 10vw 0vw 10vw;
+    position: relative;
+}
+
+.container__sign-up {
+    position: flex;
+    justify-content: space-between;
+    padding: 2.5vh 9vw 0vw 9vw;
+}
+
+.subscribe-btn {
+    padding: 1.2vh 10.8vw 1.2vh 1.6vw;
+    position: relative;
+    margin: 0 0 0 2vw;
+}
+
+.news-letter-sign-up {
+    padding: 0.9vh 9vw 0.9vh 9vw;
+    background: transparent;
+    font-size: 2.7vh;
+    line-height: 1.2;
+    color: #85689a;
+    border: 0.3vh solid #85689a;
+    transition: all 0.3s;
+    width: 10vw;
+}
+
+.news-letter-sign-up:hover {
+    color: #280e3b;
+    border: 0.3vh solid #280e3b;
+}
+
+.container__info {
+    position: relative;
+    display: flex;
+    font-size: 2.7vh;
+    color: #85689a;
+    padding: 6vh 2vw 0 2vw;
+    text-align: center;
+    word-spacing: 7px;
+
+}
+
+.info__left-column {
+    margin: 0 2vw 0 0;
+    width: 50vw;
+}
+
+.info__right-column {
+    width: 50vw;
+}
+
+.info__p {
+    line-height: 3.5vh;
+    margin: 0 0 4vh 0;
+}
+
+.hours {
+    line-height: 1.5vh;
+    margin: 0 0 2vh 0;
 }
