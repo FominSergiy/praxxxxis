@@ -110,26 +110,25 @@ a {
     transform: translateY(-50%)
 }
 
-.selector::before {
+.selector::before,
+.selector::after {
     font-family: 'icomoon';
-    content: "\f053";
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     position: absolute;
+    transform: translateY(-50%);
     font-size: 7vh;
     color: #85689a;
 }
 
+.selector::before {
+    content: "\f053";
+    left: 0;
+    top: 50%;
+}
+
 .selector::after {
-    font-family: 'icomoon';
     content: "\f054";
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    font-size: 7vh;
-    color: #85689a;
 }
 
 .date__right,
@@ -148,8 +147,10 @@ a {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    box-shadow: 0 -1vh 5vh 1vh grey;
 }
+
 
 .more-btn {
     position: relative;
@@ -252,43 +253,32 @@ a {
     padding: 5vh 3.8vw;
 }
 
-.highlights_container::before {
-    content: 'Highlights of 2019';
-    writing-mode: vertical-lr;
-    text-orientation: sideways;
-    text-align: center;
-    display: inline-block;
-    background-color: white;
-    color: rgb(139, 72, 139);
-    font-size: 50px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    position: absolute;
-    display: inline-block;
-    height: 45vh;
-    padding: 2vh;
-    left: -2.5%;
-    top: 25%;
-    z-index: 1;
-}
-
+.highlights_container::before,
 .highlights_container::after {
     content: 'Highlights of 2019';
     writing-mode: vertical-lr;
     text-orientation: sideways;
     text-align: center;
     display: inline-block;
-    transform: rotate(-180deg);
     background-color: white;
     color: rgb(139, 72, 139);
-    font-size: 50px;
+    font-size: 5vh;
     padding-top: 2%;
     padding-bottom: 2%;
     position: absolute;
-    display: inline-block;
-    height: 45vh;
+    height: 48vh;
     padding: 2vh;
-    right: -2.5%;
+}
+
+.highlights_container::before {
+    left: -2.5%;
+    top: 25%;
+    z-index: 1;
+}
+
+.highlights_container::after {
+    transform: rotate(-180deg);
+    right: -0.7%;
     top: 25%;
     z-index: 1;
 }
@@ -304,7 +294,7 @@ a {
     width: 90vw;
     padding: 3vh 6vw 3vh 7vw;
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 }
@@ -340,8 +330,10 @@ a {
     height: 37vh;
 }
 
-.highlights__box-image img {
+.highlights__box-image {
     display: block;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
@@ -374,4 +366,122 @@ a {
     width: 10vw;
     height: 2hv;
 }
-/* button styling */
+
+/* exhibition list START */
+.agenda {
+    height: 100vh;
+}
+
+.agenda__background-image {
+    background-image:
+         url("../photo/4/pawel-czerwinski-0oUbmylfYmo-unsplash.jpg");
+    background-size: cover;
+    display: block;
+    filter: 
+        grayscale(100%)
+        contrast(70%)
+        blur(3px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right:0;
+    z-index: -1;
+}
+
+.agenda__container {
+    padding: 10vw 20vh 5vw 26vh;
+    position: relative;
+}
+
+.agenda__list-item {
+    font-size: 4vh;
+    font-weight: bolder;
+    line-height: 11vh;
+    padding-bottom: 5vh;
+    text-align: left;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.agenda__box {
+    position: absolute;
+    height: 63vh;
+    width: 36vw;
+    display: grid;
+    padding: 1px 2vw 1px 2vw;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    top: 19%;
+    right: 11%;
+}
+
+.defs-only {
+    position: absolute;
+    height: 0; width: 0;
+    overflow: none;
+    left: -100%;
+}  
+
+.agenda__box-card {
+    position: relative;
+    display: flex;
+    max-width: 25vw;
+    width: 13vw;
+    height: 26vh;
+}
+
+.agenda__box-image {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: 
+        contrast(100%)
+        saturate(10%)
+        url(#monochrome);
+}
+
+.agenda__box-card::after {
+    font-family: 'icomoon';
+    content: "\f142";
+    font-size: 4vh;
+    color: #fff;
+    transition: all 0.3s;
+    height: 4vh;
+    width: 4vh;
+    right: 3%;
+    top: 45%;
+    position: absolute;  
+    transform: translate(50%);
+}
+
+.learn_more-btn {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%);
+}
+
+/* general info START */
+.general-info {
+    height: 100vh;
+}
+
+.general-info__background-image {
+    background-image:
+         url("../photo/5/back-3.png");
+    background-size: cover;
+    display: block;
+    filter: opacity(50);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right:0;
+    z-index: -1;
+    background-blend-mode: saturation;
+}

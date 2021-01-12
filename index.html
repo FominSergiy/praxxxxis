@@ -55,12 +55,12 @@
             <div class="selector">
                 <h2 class="selector__title">Current exhibition</h2>
 
-                <!-- three center elements -->
+                <!-- two side elements -->
                 <div class='date'>
                     <div class="date__left">
                         <p>August</p>
                         <p>10, 2019</p>
-                        <p> –</p>
+                        <p>–</p>
                         <p> February </p>
                         <p>23, 2020</p>
                     </div>
@@ -119,43 +119,125 @@
             <!-- images table -->
             <div class="highlights__box">
                 <div class="highlights__box-card">
-                    <div class="highlights__box-image">
-                        <img src="photo/3/stephany-lorena-EEae2nmrIJ8-unsplash.jpg" alt="">
+                    <div class="highlights__box-image"
+                        style="background-image: url(photo/3/stephany-lorena-EEae2nmrIJ8-unsplash.jpg)">
                     </div>
                 </div>
                 <div class="highlights__box-card">
-                    <div class="highlights__box-image">
-                        <img src="photo/3/laurianne-huggins-AeT8VR7qss0-unsplash.jpg" alt="">
+                    <div class="highlights__box-image"
+                        style="background-image: url(photo/3/laurianne-huggins-AeT8VR7qss0-unsplash.jpg)">
                     </div>
                 </div>
                 <div class="highlights__box-card">
-                    <div class="highlights__box-image">
-                        <img src="photo/3/gabriel-santiago-09IS_HJcUZA-unsplash.jpg" alt="">
+                    <div class="highlights__box-image"
+                        style="background-image: url(photo/3/gabriel-santiago-09IS_HJcUZA-unsplash.jpg)">
                     </div>
                 </div>
                 <div class="highlights__box-card">
-                    <div class="highlights__box-image">
-                        <img src="photo/3/jon-tyson-WB9TRkyrlzk-unsplash.jpg" alt="">
+                    <div class="highlights__box-image"
+                        style="background-image: url(photo/3/jon-tyson-WB9TRkyrlzk-unsplash.jpg)">
                     </div>
                 </div>
                 <div class="highlights__box-card">
-                    <div class="highlights__box-image">
-                        <img src="photo/3/nina-z-Rc_gCVM9Wyw-unsplash.jpg" alt="">
+                    <div class="highlights__box-image"
+                        style="background-image: url(photo/3/nina-z-Rc_gCVM9Wyw-unsplash.jpg)">
                     </div>
                 </div>
                 <div class="highlights__box-card">
-                    <div class="highlights__box-image">
-                        <img src="photo/3/nikola-johnny-mirkovic-I-DOPxjgRxY-unsplash.jpg" alt="">
+                    <div class="highlights__box-image"
+                        style="background-image: url(photo/3/nikola-johnny-mirkovic-I-DOPxjgRxY-unsplash.jpg)">
                     </div>
                 </div>
             </div>
-            <!-- white container -->
+            <!-- image table END -->
+
+            <!-- white buttom wrapper -->
             <div class="white-contaier">
                 <a class="main-btn see_more-btn" href="">See more</a>
             </div>
         </div>
     </section>
     <!-- highlights section END -->
+
+    <!-- exhibition list section START -->
+    <section class="agenda">
+
+        <!-- setting up background image as a separate element to allow for blur-->
+        <div class="agenda__background-image"></div>
+
+        <div class="agenda__container">
+
+            <div class="agenda__text-box">
+                <ul class="agenda__list">
+                    <li class="agenda__list-item">
+                        <a href="" class="agenda__list-link">Adult Art-Making Workshops</a>
+                    </li>
+                    <li class="agenda__list-item">
+                        <a href="" class="agenda__list-link">Student Exhibitions</a>
+                    </li>
+                    <li class="agenda__list-item">
+                        <a href="" class="agenda__list-link">Open Art House</a>
+                    </li>
+                    <li class="agenda__list-item">
+                        <a href="" class="agenda__list-link">Community Collaborations</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- image table START -->
+            <div class="agenda__box">
+
+                <!-- Set custom color filter to get purple pictures -->
+                <svg class="defs-only">
+                    <filter id="monochrome" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+                        <feColorMatrix type="matrix" values="
+                        0.52 0 0 0 0
+                        0 0.41 0 0 0 
+                        0 0 0.60 0 0
+                        0 0 0 1 0 " />
+                    </filter>
+                </svg>
+
+
+                <!-- custom color filter END-->
+
+                <div class="agenda__box-card">
+                    <div class="agenda__box-image"
+                        style="background-image: url(photo/4/eddy-klaus-BHNxfaeNCTI-unsplash.jpg)">
+                    </div>
+                </div>
+                <div class="agenda__box-card">
+                    <div class="agenda__box-image"
+                        style="background-image: url(photo/4/geri-mis-btpqhY1vWvQ-unsplash.jpg)">
+                    </div>
+                </div>
+                <div class="agenda__box-card">
+                    <div class="agenda__box-image"
+                        style="background-image: url(photo/4/matthieu-comoy-koo_vYrlU_U-unsplash.jpg)">
+                    </div>
+                </div>
+                <div class="agenda__box-card">
+                    <div class="agenda__box-image"
+                        style="background-image: url(photo/4/antenna-cw-cj_nFa14-unsplash.jpg)">
+                    </div>
+                </div>
+            </div>
+            <!-- image table END -->
+
+            <a class="main-btn learn_more-btn" href="">Learn more</a>
+
+        </div>
+    </section>
+    <!-- exhibition list section END-->
+
+    <!-- general info section START -->
+    <section class="contact-us">
+        <div class="contact-us"></div>
+
+    </section>
+    <!-- general info section END -->
+
+
 
 </body>
 
