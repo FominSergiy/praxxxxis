@@ -526,7 +526,7 @@ a {
     position: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 2.5vh 0vw 0vw 9vw;
+    padding: 2.5vh 0vw 0vh 9vw;
 }
 
 .subscribe-btn {
