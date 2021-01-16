@@ -408,6 +408,10 @@ a {
     list-style-type: none;
 }
 
+.agenda__list-link:hover {
+    border-bottom: .9vh solid #473753;
+}
+
 .agenda__box {
     position: absolute;
     height: 63vh;
