@@ -3,17 +3,66 @@ body {
     font-size : 18px;
     line-height: 1.5;
     color: #333;
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
-main {
+/* HEADER STYLES START */
+header > h1,
+header > h2 {
+  width: 100vw;
+  text-align: center;
   position: relative;
-  width: 100vh;
+  color:azure;
+  font-variant: small-caps;
+  text-shadow: 0 0 2px #000;
+  padding: 0;
+  /* display: inline-block; */
+}
+
+.nav {
+  font-size: 4vh;
+  white-space: nowrap;
+  padding: 0 40vw 0 39vw;
+  align-content: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav__list-item + .nav__list-item {
+  margin-left: 3.6vw;
+}
+
+.nav__link {
+  color: azure;
+  text-shadow: 0 0 2px #000;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: coral;
+}
+/* HEADER STYLES END */
+
+main {
+  border-top: 2px solid #e3e3e3;
+}
+
+a {
+  transition: all 0.3s;
 }
 
 h1 {
   margin: 7vh 0 2vh 0;
   font-size: 60px;
   text-align: center;
+  color: #333;
+
 }
 
 ul {
@@ -25,7 +74,6 @@ h2 {
   padding: 0 0 5vh 0;
   font-size: 25px;
   text-align: center;
-  border-bottom: 2px solid #e3e3e3;
 }
 
 h3 {
@@ -44,13 +92,15 @@ main {
 
 section {
   margin: 7vh 0 7vh 0;
-  padding: 0 7vh 0 7vh;
+  padding: 0.5vh 7vh 0.5vh 7vh;
+  background-color: azure;
+  filter: opacity(90%);
+  /* border-radius: 5%; */
 }
 
 section h2 {
   padding: 0;
   text-align: left;
-  border: none;
 }
 
 section li {
@@ -65,13 +115,34 @@ section li {
   font-size: 18px;
 }
 
+/* SIDE BAR STYLING START */
 .side-bar {
   position: fixed;
-  background-color:darkslategray;
   left: 2vw;
   width: 15vw;
-  border-radius: 5%;
   /* height: 20vh; */
+}
+
+.portfolio-container {
+  background-color:darkslategray;
+  position: relative;
+  border-radius: 5%;
+  padding: 0.5vh 0 0.5vh 0;
+}
+
+.side-bar__image {
+  background-image: url('../images/side_bar_image.jpg');
+  position: relative;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  height: 10vh;
+  width: 10vw;
+  margin: 0 0 1vh 0;
+  padding: 1vh 0 1vh 0;
+  border-radius: 5%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .side-bar h2 {
@@ -90,5 +161,6 @@ section li {
 .project__link:hover {
   text-decoration: none;
   color:coral;
-  font-weight: bolder;
 }
+
+/* SIDE BAR STYLING END */
